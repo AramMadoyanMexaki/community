@@ -1,0 +1,61 @@
+/* variables */
+
+:root {
+    --cold-steel: #232536;
+    --canary-diamond: #ffd050;
+    --royalty: #592ea9;
+    --shady-character: #4c4c4c;
+    --granite-canyon: #6d6e76;
+    --lighthouse: #f4f4f4;
+    --alpine-goat: #f4f0f8;
+    --clear-moon: #fbf6ea;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: "Sen";
+    src: local("Sen-Regular"),
+         url("../fonts/Sen-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sen";
+    src: local("Sen-Medium"),
+         url("../fonts/Sen-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sen";
+    src: local("Sen-Bold"),
+         url("../fonts/Sen-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* global */
+
+.container {
+    max-width: 1275px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* header */
+

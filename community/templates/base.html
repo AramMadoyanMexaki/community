@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="{% url 'home' %}" class="header__logo">
+                <img src="{% static 'images/Logo.svg' %}" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav-item__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-item__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-item__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav-item__link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="header_subscribe subs">Subscribe</a>
+        </div>
+    </header>
+    <main>
+        <!-- <section class="main">
+            <div class="container">
+                <p class="main__subtitle"><span class="subtitle_bold">POSTED ON STARTUP</span></p>
+                <h1 class="main__title">Step-by-step guide to choosing great font pairs</h1>
+                <p class="main__subtext">By <span class="">James West</span></p>
+            </div>
+        </section> -->
+        <div class="container">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </main>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_top">
+                <a href="{% url 'home' %}" class="header__logo">
+                    <img src="{% static 'images/Logo.svg' %}" alt="logo">
+                </a>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-list__item">
+                            <a href="#" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__nav-list__item">
+                            <a href="#" class="footer__link">Blog</a>
+                        </li>
+                        <li class="footer__nav-list__item">
+                            <a href="#" class="footer__link">About us</a>
+                        </li>
+                        <li class="footer__nav-list__item">
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+                        <li class="footer__nav-list__item">
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__subscribe">
+                <h2 class="footer__title">Subscribe to our news letter to get latest updates and news</h2>
+                <form action="" method="post">
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__addresses">
+                    <address class="address">
+                        Finstreet 118 2561 Fintown<br/>
+                        Hello@finsweet.com  020 7993 2905
+                    </address>
+                </div>
+                <div class="footer__social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
