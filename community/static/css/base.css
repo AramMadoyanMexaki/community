@@ -1,0 +1,122 @@
+.header {
+    background-color: var(--cold-steel);
+}
+
+.header__container {
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header__nav {
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+.nav__list {
+    gap: 24px;
+}
+
+.nav-item__link {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.header__subscribe {
+    background-color: var(--white);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* footer */
+
+
+footer {
+    margin-top: 150px;
+    padding-top: 61px;
+    padding-bottom: 56px;
+    background-color: var(--cold-steel);
+
+    .footer__top {
+        align-items: center;
+        padding-bottom: 54px;
+    }
+
+    .footer__nav {
+        margin-left: auto;
+    }
+
+    .footer__nav-list {
+        gap: 24px;
+
+        .footer__nav-list__item {
+            a {
+                color: var(--white);
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footer__subscribe {
+        align-items: center;
+        justify-content: space-between;
+        padding: 90px 64px;
+        background-color: rgba(109, 110, 118, 0.3);;
+
+        .footer__title {
+            max-width: 562px;
+            font-size: 29px;
+            line-height: 40px;
+            font-weight: bold;
+            color: var(--white);
+        }
+
+        form {
+            display: flex;
+            gap: 24px;
+
+            .footer__btn {
+                background-color: var(--canary-diamond);
+                color: #000000;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 600;
+                cursor: pointer;
+                border: none;
+            }
+    
+            input {
+                background-color: inherit;
+                border: 1px solid var(--shady-character);
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 600;
+                padding: 14px 162px 14px 24px;
+            }
+
+        }
+    }
+
+    .footer__bottom {
+        padding-top: 48px;
+        justify-content: space-between;
+        align-items: center;
+
+        address {
+            line-height: 28px;
+            color: var(--lighthouse);
+            font-weight: 400;
+            font-size: 19px;
+        }
+
+        .social__list {
+            gap: 26px;
+        }
+    }
+}

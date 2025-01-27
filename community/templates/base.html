@@ -8,15 +8,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="container header__container flex">
             <a href="{% url 'home' %}" class="header__logo">
                 <img src="{% static 'images/Logo.svg' %}" alt="logo">
             </a>
             <nav class="header__nav">
-                <ul class="nav__list">
+                <ul class="nav__list flex">
                     <li class="nav__item">
                         <a href="#" class="nav-item__link">Home</a>
                     </li>
@@ -31,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="header_subscribe subs">Subscribe</a>
+            <a href="#" class="header__subscribe site-btn">Subscribe</a>
         </div>
     </header>
     <main>
@@ -40,6 +41,7 @@
                 <p class="main__subtitle"><span class="subtitle_bold">POSTED ON STARTUP</span></p>
                 <h1 class="main__title">Step-by-step guide to choosing great font pairs</h1>
                 <p class="main__subtext">By <span class="">James West</span></p>
+                <p class="main__context">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
             </div>
         </section> -->
         <div class="container">
@@ -49,13 +51,13 @@
         </div>
     </main>
     <footer>
-        <div class="container footer_container">
-            <div class="footer_top">
+        <div class="container footer__container">
+            <div class="footer__top flex">
                 <a href="{% url 'home' %}" class="header__logo">
                     <img src="{% static 'images/Logo.svg' %}" alt="logo">
                 </a>
                 <nav class="footer__nav">
-                    <ul class="footer__nav-list">
+                    <ul class="footer__nav-list flex">
                         <li class="footer__nav-list__item">
                             <a href="#" class="footer__link">Home</a>
                         </li>
@@ -74,22 +76,19 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer__subscribe">
+            <div class="footer__subscribe flex">
                 <h2 class="footer__title">Subscribe to our news letter to get latest updates and news</h2>
                 <form action="" method="post">
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <button type="submit">SUBSCRIBE</button>
+                    <input class="footer__input" type="email" placeholder="Enter Your Email" required>
+                    <button class="footer__btn site-btn" type="submit">Subscribe</button>
                 </form>
             </div>
-            <div class="footer__bottom">
-                <div class="footer__addresses">
+            <div class="footer__bottom flex">
                     <address class="address">
                         Finstreet 118 2561 Fintown<br/>
                         Hello@finsweet.com  020 7993 2905
                     </address>
-                </div>
-                <div class="footer__social">
-                    <ul class="social__list">
+                    <ul class="social__list flex">
                         <li class="social__item">
                             <a href="#" class="social__link">
                                 <img src="{% static 'images/facebook.svg' %}" alt="facebook">
@@ -111,7 +110,6 @@
                             </a>
                         </li>
                     </ul>
-                </div>
             </div>
         </div>
     </footer>
