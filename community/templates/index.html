@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="main">
+        <div class="container main__container">
+            <div class="main__content">
+                <p class="main__subtitle">POSTED ON <span class="subtitle_bold">STARTUP</span></p>
+                <h1 class="main__title">Step-by-step guide to choosing great font pairs</h1>
+                <p class="main__subtext">By <span class="subtext__user">James West</span> | May, 2024</p>
+                <p class="main__context">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <a href="#" class="main__btn primary-btn site-btn">
+                    Read more
+                    <svg height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="posts__content flex">
+                <div class="featured__post">
+                    <h2 class="post-sec__title sec-title">Featured Post</h2>
+                    <div class="featured-post__content">
+                        <img class="post__img" src="{% static 'images/temp-post-image.jpg' %}" alt="post-img">
+                        <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                        <h3 class="post__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
+                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        <a href="#" class="read__post primary-btn site-btn">
+                            Read more
+                            <svg height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="all__posts">
+                    <h2 class="post-sec__title sec-title">All Posts</h2>
+                    <div class="all-posts__content">
+                        <ul class="all-posts-list">
+                            <li class="list__post">
+                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
+                            </li>
+                            <li class="list__post">
+                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
+                            </li>
+                            <li class="list__post">
+                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
+                            </li>
+                            <li class="list__post">
+                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__progress"></div>  
+            <div class="about__content">
+                <div class="about__block">
+                    <h3 class="about__title">ABOUT US</h3>
+                    <h2 class="about__heading">
+                        We are a community of content writers who share their learnings
+                    </h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a href="#" class="about__link primary-btn site-btn">Read More ></a>
+                </div>
+                <div class="about__block">
+                    <h3 class="about__title">OUR MISSION</h3>
+                    <h2 class="about__heading">
+                        Creating valuable content for creatives all around the world
+                    </h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="categories__title">Choose A Category</h2>
+            <ul class="categories__list flex">
+                <li class="categories__item categories__item--business">
+                    <img src="{% static 'images/business-icon.svg' %}" alt="">
+                    <h3 class="categories__name">Business</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="categories__item categories__item--startup">
+                    <img src="{% static 'images/startup-Icon.svg' %}" alt="">
+                    <h3 class="categories__name">Startup</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="categories__item categories__item--economy">
+                    <img src="{% static 'images/economy-icon.svg' %}" alt="">
+                    <h3 class="categories__name">Economy</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="categories__item categories__item--technology">
+                    <img src="{% static 'images/technology-icon.svg' %}" alt="">
+                    <h3 class="categories__name">Technology</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+{% endblock %}

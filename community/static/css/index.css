@@ -1,0 +1,139 @@
+/* main section */
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/men_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__container {
+    padding-top: 170px;
+}
+
+.main__content {
+    max-width: 804px;
+}
+
+.main__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3px;
+    color: var(--alpine-goat);
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    .subtitle_bold {
+        font-weight: 700;
+    }
+}
+
+.main__title {
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 700;
+    color: var(--alpine-goat);
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.main__subtext {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--alpine-goat);
+
+    .subtext__user {
+        color: var(--canary-diamond);
+    }
+}
+
+.main__context {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--alpine-goat);
+}
+
+/* posts section */
+
+.posts {
+    margin-top: 128px;
+}
+
+.posts__content {
+    gap: 32px;
+}
+
+.post-sec__title {
+    margin-bottom: 23px;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.featured-post__content {
+    padding: 32px;
+    max-width: 703px;
+    border: 1px solid var(--lighthouse);
+
+    img {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .post__descr {
+        margin-top: 0;
+        margin-bottom: 32px;
+        color: var(--granite-canyon);
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+}
+
+.post__user {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--shady-character);
+
+    span {
+        color: var(--royalty);
+    }
+}
+
+.post__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.all-posts__content {
+    padding-top: 32px;
+}
+
+.all-posts-list .list__post {
+    padding: 0 115px 25px 32px;
+    max-width: 517px;
+}
+
+.all-posts-list .list__post:not(:first-child) {
+    padding-top: 32px;
+}
+
+
+/* about section*/
+
+

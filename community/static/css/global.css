@@ -10,6 +10,39 @@ a {
     padding: 16px 48px;
 }
 
+.sec-title {
+    margin: 0;
+}
+
+.primary-btn {
+    background-color: var(--canary-diamond);
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    display: inline-block;
+
+    svg {
+        vertical-align: middle;
+    }
+}
+
+.container {
+    max-width: 1275px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
 /* variables */
 
 :root {
@@ -51,21 +84,4 @@ a {
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-}
-
-/* global */
-
-.container {
-    max-width: 1275px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }

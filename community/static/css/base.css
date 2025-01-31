@@ -36,7 +36,6 @@
 
 
 footer {
-    margin-top: 150px;
     padding-top: 61px;
     padding-bottom: 56px;
     background-color: var(--cold-steel);
@@ -75,6 +74,7 @@ footer {
             line-height: 40px;
             font-weight: bold;
             color: var(--white);
+            margin: 0;
         }
 
         form {
