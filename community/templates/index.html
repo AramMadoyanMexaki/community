@@ -36,19 +36,19 @@
                     <h2 class="post-sec__title sec-title">All Posts</h2>
                     <div class="all-posts__content">
                         <ul class="all-posts-list">
-                            <li class="list__post">
+                            <li class="list__post" tabindex="0">
                                 <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
                                 <p class="post__title">8 Figma design systems that you can download for free today.</p>
                             </li>
-                            <li class="list__post">
+                            <li class="list__post" tabindex="0">
                                 <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
                                 <p class="post__title">8 Figma design systems that you can download for free today.</p>
                             </li>
-                            <li class="list__post">
+                            <li class="list__post" tabindex="0">
                                 <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
                                 <p class="post__title">8 Figma design systems that you can download for free today.</p>
                             </li>
-                            <li class="list__post">
+                            <li class="list__post" tabindex="0">
                                 <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
                                 <p class="post__title">8 Figma design systems that you can download for free today.</p>
                             </li>
@@ -59,9 +59,9 @@
         </div>
     </section>
     <section class="about">
-        <div class="container">
+        <div class="container about__container">
             <div class="about__progress"></div>  
-            <div class="about__content">
+            <div class="about__content flex">
                 <div class="about__block">
                     <h3 class="about__title">ABOUT US</h3>
                     <h2 class="about__heading">
@@ -78,7 +78,7 @@
                         Creating valuable content for creatives all around the world
                     </h2>
                     <p class="about__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </div>
             </div>
@@ -87,27 +87,153 @@
 
     <section class="categories">
         <div class="container">
-            <h2 class="categories__title">Choose A Category</h2>
+            <h2 class="categories__title sec-title">Choose A Category</h2>
             <ul class="categories__list flex">
-                <li class="categories__item categories__item--business">
+                <li class="categories__item categories__item--business" tabindex="0">
                     <img src="{% static 'images/business-icon.svg' %}" alt="">
                     <h3 class="categories__name">Business</h3>
                     <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </li>
-                <li class="categories__item categories__item--startup">
+                <li class="categories__item categories__item--startup" tabindex="0">
                     <img src="{% static 'images/startup-Icon.svg' %}" alt="">
                     <h3 class="categories__name">Startup</h3>
                     <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </li>
-                <li class="categories__item categories__item--economy">
+                <li class="categories__item categories__item--economy" tabindex="0">
                     <img src="{% static 'images/economy-icon.svg' %}" alt="">
                     <h3 class="categories__name">Economy</h3>
                     <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </li>
-                <li class="categories__item categories__item--technology">
+                <li class="categories__item categories__item--technology" tabindex="0">
                     <img src="{% static 'images/technology-icon.svg' %}" alt="">
                     <h3 class="categories__name">Technology</h3>
                     <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="why-we-started-section">
+        <div class="container flex">
+            <div class="image__container"></div>
+            <div class="why-we-started__content">
+                <span class="why-we-started-sub__title">WHY WE STARTED</span>
+                <h2 class="why-we-started__title sec-title">It started out as a simple idea and evolved into our passion</h2>
+                <p class="why-we-started__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <a href="#" class="site-btn primary-btn">Discover our story ></a>
+            </div>
+        </div>
+    </section>
+    <section class="authors">
+        <div class="container">
+            <h2 class="sec-title">List of Authors</h2>
+            <ul class="authors__list flex">
+                <li class="authors__member" tabindex="0">
+                    <img src="{% static 'images/' %}" alt="author-img">
+                    <h3 class="author-name">Floyd Miles</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="authors__member" tabindex="0">
+                    <img src="{% static 'images/' %}" alt="author-img">
+                    <h3 class="author-name">Dianne Russell</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="authors__member" tabindex="0">
+                    <img src="{% static 'images/' %}" alt="author-img">
+                    <h3 class="author-name">Jenny Wilson</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="authors__member" tabindex="0">
+                    <img src="{% static 'images/' %}" alt="author-img">
+                    <h3 class="author-name">Leslie Alexander</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>

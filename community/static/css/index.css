@@ -74,7 +74,7 @@
 
 .post-sec__title {
     margin-bottom: 23px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     font-weight: 700;
 }
@@ -120,20 +120,209 @@
     font-weight: 700;
 }
 
-.all-posts__content {
-    padding-top: 32px;
-}
-
 .all-posts-list .list__post {
-    padding: 0 115px 25px 32px;
+    padding: 32px 115px 25px 32px;
     max-width: 517px;
+    cursor: pointer;
 }
 
-.all-posts-list .list__post:not(:first-child) {
-    padding-top: 32px;
+.list__post:active {
+    background-color: var(--clear-moon);
 }
 
+.list__post:focus {
+    background-color: var(--clear-moon);
+}
 
 /* about section*/
 
+.about {
+    margin-top: 128px;
+}
 
+.about__container {
+    background-color: var(--alpine-goat);
+    padding: 96px 108px 96px 80px;
+}
+
+.about__progress {
+    position: relative;
+    top: -118px;
+    left: 109px;
+    width: 100%;
+    height: 23px;
+    background: linear-gradient(to right, var(--canary-diamond) 70%, var(--royalty) 30%);
+}
+
+.about__content {
+    justify-content: space-around;
+}
+
+.about__block {
+    max-width: 516px;
+}
+
+.about__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.about__heading {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.about__text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--granite-canyon);
+}
+
+.about__link {
+    padding: 0;
+    background-color: inherit;
+    color: var(--royalty);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+/* categories */
+
+.categories {
+    margin-top: 128px;
+
+    .categories__title {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .categories__list {
+        gap: 32px;
+
+        .categories__item--startup {
+            img {
+                padding: 12px;
+            }
+        }
+
+        .categories__item {
+            padding: 32px;
+            max-width: 296px;
+            border: 2px solid var(--alpine-goat);
+
+            .categories__name {
+                margin: 0;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 45px;
+            }
+
+            .categories__description {
+                margin: 0;
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 400;
+                color: var(--granite-canyon);
+            }
+
+            img {
+                margin-bottom: 16px;
+                background-color: var(--clear-moon);
+                border-radius: 10px;
+            }
+        }
+
+        .categories__item:hover {
+            background-color: var(--canary-diamond);
+            cursor: pointer;
+        }
+
+        .categories__item:focus {
+            background-color: var(--canary-diamond);
+        }
+    }
+}
+
+/* Why we started section */
+
+.why-we-started-section {
+    margin-top: 128px;
+    position: relative;
+
+    
+
+    .image__container {
+        position: relative;
+        width: 949px;
+        height: 705px;
+        background-image: url("../images/friends.jpg");
+    }
+
+    .why-we-started__content {
+        position: absolute;
+        padding: 80px;
+        max-width: 706px;
+        z-index: 3;
+        left: 45%;
+        top: 22%;
+        background-color: var(--white);
+
+        span {
+            margin-bottom: 24px;
+            color: var(--cold-steel);
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 25px;
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+
+        h2 {
+            margin-bottom: 16px;
+            max-width: 546px;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 55px;
+        }
+        
+        p {
+            margin-bottom: 32px;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 25px;
+            color: var(--granite-canyon);
+        }
+    }
+}
+
+
+/* Authors */
+
+.authors {
+    margin-top: 128px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .authors__list {
+        gap: 32px;
+
+        .authors__member {
+            padding: 40px 84px 40px 28px;
+        }
+    }
+}
