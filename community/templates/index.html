@@ -128,7 +128,7 @@
             <h2 class="sec-title">List of Authors</h2>
             <ul class="authors__list flex">
                 <li class="authors__member" tabindex="0">
-                    <img src="{% static 'images/' %}" alt="author-img">
+                    <img  class="author__image" src="{% static 'images/man-in-yellow.png' %}" alt="author-img">
                     <h3 class="author-name">Floyd Miles</h3>
                     <span class="author-role">Content Writer @Company</span>
                     <ul class="social__list flex">
@@ -155,7 +155,7 @@
                     </ul>
                 </li>
                 <li class="authors__member" tabindex="0">
-                    <img src="{% static 'images/' %}" alt="author-img">
+                    <img class="author__image" src="{% static 'images/woman-in-white-and-black.png' %}" alt="author-img">
                     <h3 class="author-name">Dianne Russell</h3>
                     <span class="author-role">Content Writer @Company</span>
                     <ul class="social__list flex">
@@ -182,7 +182,7 @@
                     </ul>
                 </li>
                 <li class="authors__member" tabindex="0">
-                    <img src="{% static 'images/' %}" alt="author-img">
+                    <img class="author__image" src="{% static 'images/woman-in-white.png' %}" alt="author-img">
                     <h3 class="author-name">Jenny Wilson</h3>
                     <span class="author-role">Content Writer @Company</span>
                     <ul class="social__list flex">
@@ -209,7 +209,7 @@
                     </ul>
                 </li>
                 <li class="authors__member" tabindex="0">
-                    <img src="{% static 'images/' %}" alt="author-img">
+                    <img class="author__image" src="{% static 'images/woman-in-yellow.png' %}" alt="author-img">
                     <h3 class="author-name">Leslie Alexander</h3>
                     <span class="author-role">Content Writer @Company</span>
                     <ul class="social__list flex">
@@ -238,5 +238,67 @@
             </ul>
         </div>
     </section>
-    
+    <section class="featured">
+        <div class="container flex">
+            <p>We are <span>Featured in</span></p>
+            <ul class="logos flex">
+                <li><img src="{% static 'images/first-company.svg' %}" alt="Logo 1"></li>
+                <li><img src="{% static 'images/second-company.svg' %}" alt="Logo 2"></li>
+                <li><img src="{% static 'images/third-company.svg' %}" alt="Logo 3"></li>
+                <li><img src="{% static 'images/fourth-company.svg' %}" alt="Logo 4"></li>
+                <li><img src="{% static 'images/fifth-company.svg' %}" alt="Logo 5"></li>
+            </ul>
+        </div>
+    </section>    
+    <section class="testimonials">
+        <div class="container flex">
+            <div class="testimonials-side--left">
+                <h3 class="testimonials__subtitle">TESTIMONIALS</h3>
+                <h2 class="testimonials__title">What people say about our blog</h2>
+                <p class="testimonials__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="testimonials-side--right">
+                <p class="testimonials__descr--right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img src="{% static 'images/profile-picture-1.jpg' %}" alt="user-img">
+                        <strong>Jonathan Vallem</strong>
+                        <span>New York, USA</span>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="{% static 'images/profile-picture-2.jpg' %}" alt="user-img">
+                        <strong>John Smith</strong>
+                        <span>New York, USA</span>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="{% static 'images/profile-picture-3.png' %}" alt="user-img">
+                        <strong>Jim Lorki</strong>
+                        <span>LA, USA</span>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="join">
+        <div class="container">
+            <div class="join__block">
+                <h2 class="sec-title join__title">Join our team to be a part of our story</h2>
+                <p class="join__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <a href="#" class="primary-btn site-btn join__btn">Join Now</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}
