@@ -440,10 +440,11 @@
     display: inline-block;
     
     .testimonials__descr--right {
-        font-size: 20px;
-        line-height: 23px;
-        font-weight: 600;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 700;
         max-width: 469px;
+        margin: 0;
     }
 }
 
@@ -452,6 +453,14 @@
 .swiper {
     max-width: 350px;
     padding: 20px;
+    margin-top: 121px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.swiper-button {
+    border: none;
+    background-color: inherit;
 }
 
 .swiper-wrapper {

@@ -1,5 +1,97 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-    
+    <section class="main-post">
+        <div class="container flex">
+            <div class="main-post__content">
+                <span class="post__subtitle">FEATURED POST</span>
+                <h1 class="sec-title main-post__title">Step-by-step guide to choosing great font pairs</h1>
+                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <a href="#" class="primary-btn site-btn">
+                    Read more
+                    <svg height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "/></svg>
+                </a>
+            </div>
+            <div class="post__image">
+                <img src="{% static 'images/post-img.jpg' %}" alt="post-img">
+            </div>
+        </div>
+    </section>
+    <section class="all-posts">
+        <div class="container">
+            <h2 class="sec-title">All Posts</h2>
+            <ul class="posts__list flex">
+                <li class="post__item flex">
+                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
+                    <div class="post__context">
+                        <span class="category">Startup</span>
+                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
+                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    </div>
+                </li>
+                <li class="post__item flex">
+                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
+                    <div class="post__context">
+                        <span class="category">Startup</span>
+                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
+                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    </div>
+                </li>
+                <li class="post__item flex">
+                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
+                    <div class="post__context">
+                        <span class="category">Startup</span>
+                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
+                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    </div>
+                </li>
+                <li class="post__item flex">
+                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
+                    <div class="post__context">
+                        <span class="category">Startup</span>
+                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
+                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="step__buttons flex">
+                <button class="step-btn" id="prev-btn">
+                    < Prev
+                </button>
+                <button class="step-btn" id="next-btn">
+                    Next >
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="blog-categories__title sec-title">All Category</h2>
+            <ul class="categories__list flex">
+                <li class="categories__item categories__item--business" tabindex="0">
+                    <img src="{% static 'images/business-icon.svg' %}" alt="">
+                    <h3 class="categories__name">Business</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="categories__item categories__item--startup" tabindex="0">
+                    <img src="{% static 'images/startup-Icon.svg' %}" alt="">
+                    <h3 class="categories__name">Startup</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="categories__item categories__item--economy" tabindex="0">
+                    <img src="{% static 'images/economy-icon.svg' %}" alt="">
+                    <h3 class="categories__name">Economy</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="categories__item categories__item--technology" tabindex="0">
+                    <img src="{% static 'images/technology-icon.svg' %}" alt="">
+                    <h3 class="categories__name">Technology</h3>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 {% endblock %}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <!-- Swipper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -25,7 +26,7 @@
                         <a href="#" class="nav-item__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav-item__link">Blog</a>
+                        <a href="{% url 'blog' %}" class="nav-item__link">Blog</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav-item__link">About Us</a>
@@ -42,6 +43,15 @@
         {% block content %}
 
         {% endblock %}
+        <section class="join">
+            <div class="container">
+                <div class="join__block">
+                    <h2 class="sec-title join__title">Join our team to be a part of our story</h2>
+                    <p class="join__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <a href="#" class="primary-btn site-btn join__btn">Join Now</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container footer__container">

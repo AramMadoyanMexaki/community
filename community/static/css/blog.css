@@ -1,0 +1,121 @@
+.main-post {
+    background-color: var(--alpine-goat);
+
+    .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        align-items: center;
+    }
+
+    .post__subtitle {
+        letter-spacing: 2px;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .main-post__content {
+        max-width: 624px;
+
+        .main-post__title {
+            font-size: 33px;
+            line-height: 45px;
+            margin-bottom: 16px;
+        }
+        
+    }
+    .post__image {
+        margin-left: 141px;
+    }
+}
+
+.post__descr {
+    margin-top: 0;
+    margin-bottom: 32px;
+    color: var(--granite-canyon);
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;      
+}
+
+
+/* all posts */
+
+.all-posts {
+    margin-top: 64px;
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    .posts__list {
+        flex-direction: column;
+        gap: 64px;
+        border-top: 1px solid var(--granite-canyon);
+        padding-top: 64px;
+
+        .post__item {
+            align-items: center;
+        }
+    }
+
+    .post__context {
+        margin-left: 32px;
+        max-width: 624px;
+
+        .category {
+            display: inline-block;
+            color: var(--royalty);
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 35px;
+            line-height: 50px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .step__buttons {
+        margin-top: 64px;
+        justify-content: center;
+        gap: 16px;
+        
+        .step-btn {
+            background-color: inherit;
+            border: none;
+            cursor: pointer;
+            color: var(--granite-canyon);
+            font-size: 25px;
+            line-height: 28px;
+            font-weight: 600;
+            transition: linear .2s;
+        }
+
+        .step-btn:hover {
+            color: #000000;
+            font-size: 27px;
+        }
+    }
+}
+
+
+.blog-categories__title {
+    margin-bottom: 48px;
+}
