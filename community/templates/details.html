@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="details-info">
+        <div class="container">
+            <div class="user-global__info">
+                <div class="user-info flex">
+                    <img src="{% static 'images/profile-picture-1.jpg' %}" alt="">
+                    <div class="user__text-info">
+                        <span class="user-name">Andrew Jonson</span>
+                        <p class="post-date">Posted on 27th January 2025</p>
+                    </div>
+                </div>
+                <h1 class="details-post__title">Step-by-step guide to choosing great font pairs</h1>
+                <span class="category">
+                    <img src="{% static 'images/startup-Icon.svg' %}" alt="">
+                    Startup
+                </span>
+            </div>
+            <div class="post-img">
+                <img src="{% static 'images/post-img.jpg' %}" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="post-context">
+        <div class="container">
+            <div class="context__block">
+                <h2 class="descr-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <p class="post-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p><br><br>
+                <h2 class="descr-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <p class="post-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p><br>
+            </div>
+        </div>
+    </section>
+    <section class="next-posts">
+        <div class="container">
+            <h2 class="sec-title">What read to next</h2>
+            <ul class="next-posts-list flex">
+                <li class="next-post">
+                    <img src="{% static 'images/post-img.jpg' %}" alt="">
+                    <h3 class="next-post__title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                    <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                    <p class="next-post__descr post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </li>
+                <li class="next-post">
+                    <img src="{% static 'images/post-img.jpg' %}" alt="">
+                    <h3 class="next-post__title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                    <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                    <p class="next-post__descr post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </li>
+                <li class="next-post">
+                    <img src="{% static 'images/post-img.jpg' %}" alt="">
+                    <h3 class="next-post__title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                    <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
+                    <p class="next-post__descr post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

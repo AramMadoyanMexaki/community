@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
     <!-- Swipper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -23,7 +24,7 @@
             <nav class="header__nav">
                 <ul class="nav__list flex">
                     <li class="nav__item">
-                        <a href="#" class="nav-item__link">Home</a>
+                        <a href="{% url 'home' %}" class="nav-item__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="{% url 'blog' %}" class="nav-item__link">Blog</a>
@@ -62,7 +63,7 @@
                 <nav class="footer__nav">
                     <ul class="footer__nav-list flex">
                         <li class="footer__nav-list__item">
-                            <a href="#" class="footer__link">Home</a>
+                            <a href="{% url 'home' %}" class="footer__link">Home</a>
                         </li>
                         <li class="footer__nav-list__item">
                             <a href="#" class="footer__link">Blog</a>
