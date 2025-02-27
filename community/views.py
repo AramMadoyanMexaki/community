@@ -9,3 +9,9 @@ def blog(request):
 
 def details(request):
     return render(request, "details.html")
+
+def about(request):
+    return render(request, "about-us.html")
+
+def contact(request):
+    return render(request, "contact.html")

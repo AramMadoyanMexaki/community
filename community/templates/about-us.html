@@ -2,5 +2,191 @@
 {% load static %}
 
 {% block content %}
+    <section class="about-us a-u2">
+        <div class="container">
+            <div class="about-us-top__content flex">
+                <div class="top__title-block">
+                    <span>ABOUT US</span>
+                    <h1 class="about-us-main__title">We are a team of content writers who share their learnings</h1>
+                </div>
+                
+                <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="about-us__info">
+                <div class="info-numbers">
+                    <ul class="numerical__informatins flex">
+                        <li class="num__info">
+                            <h3>12+</h3>
+                            <p>Blogs published</p>
+                        </li>
+                        <li class="num__info">
+                            <h3>18K+</h3>
+                            <p>Views in Finsweet</p>
+                        </li>
+                        <li class="num__info">
+                            <h3>30K+</h3>
+                            <p>Total active users</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__progress our-progress"></div>
+                <div class="bottom__info">
+                    <ul class="bottom__context flex">
+                        <li class="bottom__context-item">
+                            <span>OUR MISSION</span>
+                            <h3>Creating valuable content for creatives all around the world</h3>
+                            <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                        </li>
+                        <li class="bottom__context-item">
+                            <span>OUR VISION</span>
+                            <h3>A platform that empowers individuals to improve</h3>
+                            <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-team">
+        <div class="container">
+            <div class="text-image">
+                <div class="text">
+                    <h2>Our team of creatives</h2>
+                    <p class="spec__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                </div>
+                <div class="image">
+                    <img src="{% static 'images/team.jpg' %}" alt="Team hands together">
+                    <span class="decor yellow"></span>
+                </div>
+            </div>
     
+            <div class="text-image reverse">
+                <div class="text">
+                    <h2>Why we started this Blog</h2>
+                    <p class="spec__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                </div>
+                <div class="image">
+                    <img src="{% static 'images/team-persons.jpg' %}" alt="People discussing outside">
+                    <span class="decor purple"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="authors">
+        <div class="container">
+            <h2 class="sec-title">List of Authors</h2>
+            <ul class="authors__list flex">
+                <li class="authors__member" tabindex="0">
+                    <img  class="author__image" src="{% static 'images/man-in-yellow.png' %}" alt="author-img">
+                    <h3 class="author-name">Floyd Miles</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="authors__member" tabindex="0">
+                    <img class="author__image" src="{% static 'images/woman-in-white-and-black.png' %}" alt="author-img">
+                    <h3 class="author-name">Dianne Russell</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="authors__member" tabindex="0">
+                    <img class="author__image" src="{% static 'images/woman-in-white.png' %}" alt="author-img">
+                    <h3 class="author-name">Jenny Wilson</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="authors__member" tabindex="0">
+                    <img class="author__image" src="{% static 'images/woman-in-yellow.png' %}" alt="author-img">
+                    <h3 class="author-name">Leslie Alexander</h3>
+                    <span class="author-role">Content Writer @Company</span>
+                    <ul class="social__list flex">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/facebook.svg' %}" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/twitter.svg' %}" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/instagram.svg' %}" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="{% static 'images/linkedin.svg' %}" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
 {% endblock %}
