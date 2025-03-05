@@ -1,0 +1,51 @@
+.privacy-title-section {
+    background-color: var(--alpine-goat);
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+        font-weight: 700;
+        color: var(--cold-steel);
+        margin: 0;
+    }
+
+    .post-descr {
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+    }
+}
+
+.text {
+    margin-top: 128px;
+
+    .text__block {
+        max-width: 768px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 35px;
+            color: var(--cold-steel);
+            font-weight: 700;
+            line-height: 40px;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .sec-part-title {
+            margin-top: 32px;
+        }
+    }
+}

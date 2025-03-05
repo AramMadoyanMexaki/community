@@ -3,29 +3,43 @@
 
 {% block content %}
     <section class="contact-main__title">
-        <div class="container">
-            <span>CONTACT US</span>
-            <h1>Let’s Start a Conversation</h1>
-            <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+        <div class="container flex">
+            <div class="title__context flex">
+                <span>CONTACT US</span>
+                <h1>Let’s Start a Conversation</h1>
+                <p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+            </div>
         </div>
     </section>
     <section class="contact">
-        <div class="container">
-            <div class="contact__info">
-
+        <div class="container flex">
+            <div class="contact__info flex">
+                <div class="contact__info-block">
+                    <span class="sub-text block-name">Working hours</span>
+                    <div class="info-main-context">
+                        <span class="main-info-text">Monday To Friday <br> 9:00 AM to 8:00 PM</span>
+                        <span class="sub-text support-team">Our Support Team is available 24/7</span>
+                    </div>
+                </div>
+                <div class="contact__info-block">
+                    <span class="sub-text block-name">Contact Us</span>
+                    <div class="info-main-context">
+                        <span class="main-info-text">020 7993 2905</span>
+                        <span class="sub-text email">
+                            hello@finsweet.com
+                        </span>
+                    </div>
+                </div>
             </div>
-            <form action="" method="POST" class="contact__form">
+            <form action="" method="POST" class="contact__form flex">
                 {% csrf_token %}
                 <input type="text" placeholder="Full Name" name="name">
                 <input type="email" placeholder="Your Email" name="email">
-                <select name="query_related" id="">
-                    Query Related
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                <select name="query">
+                    <option value="Query Related">Query Related</option>
+                  </select>
                 <textarea name="message" id="" placeholder="Message"></textarea>
+                <button class="send-btn primary-btn" type="submit">Send Message</button>
             </form>
         </div>
     </section>

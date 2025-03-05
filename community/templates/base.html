@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/about-us.css' %}">
     <link rel="stylesheet" href="{% static 'css/author.css' %}">
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/privacy-policy.css' %}">
     <!-- Swipper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -78,7 +79,7 @@
                             <a href="{% url 'contact' %}" class="footer__link">Contact us</a>
                         </li>
                         <li class="footer__nav-list__item">
-                            <a href="#" class="footer__link">Privacy Policy</a>
+                            <a href="{% url 'privacy' %}" class="footer__link">Privacy Policy</a>
                         </li>
                     </ul>
                 </nav>

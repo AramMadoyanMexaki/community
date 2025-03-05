@@ -1,0 +1,114 @@
+.contact-main__title {
+    margin-top: 128px;
+    .container {
+        justify-content: center;
+
+        .title__context {
+            max-width: 768px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                display: block;
+                font-size: 19px;
+                line-height: 25px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom: 12px;
+            }
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 24px;
+                font-size: 45px;
+                line-height: 50px;
+                font-weight: 700;
+            }
+
+            p {
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contact {
+    margin-top: 64px;
+    .container {
+        max-width: 768px;
+    }
+
+    .sub-text {
+        display: block;
+        line-height: 21px;
+        font-weight: 400;
+        color: var(--lighthouse);
+    }
+
+    .support-team {
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--lighthouse);
+    }
+
+    .block-name {
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__info {
+        background-color: var(--royalty);
+        justify-content: space-around;
+        padding: 48px 0 54px 0;
+        width: 100%;  /* Ensures it stretches */
+        max-width: 768px; /* Prevents it from getting too wide */
+        flex-wrap: wrap
+    }
+
+    .contact__info-block {
+        max-width: 294px;
+    }
+
+    .info-main-context {
+        padding-top: 16px;
+        border-top: 1px solid var(--lighthouse);
+
+        .main-info-text {
+            color: var(--white);
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: 600;
+        }
+    }
+
+    .contact__form {
+        flex-direction: column;
+        margin-top: 32px;
+        gap: 16px;
+        width: 100%;
+        max-width: 768px;
+
+        input, select, textarea {
+            padding: 24px 0 24px 24px;
+            font-size: 18px;
+            line-height: 24px;
+            color: var(--shady-character);
+        }
+        
+        .primary-btn {
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 19px;
+            cursor: pointer;
+        }
+    }
+}
