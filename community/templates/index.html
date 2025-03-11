@@ -36,22 +36,12 @@
                     <h2 class="post-sec__title sec-title">All Posts</h2>
                     <div class="all-posts__content">
                         <ul class="all-posts-list">
+                            {% for post in posts %}
                             <li class="list__post" tabindex="0">
-                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
+                                <p class="post__user">By <span>{{ post.author }}</span> | January 31, 2025</p>
+                                <p class="post__title">{{post.title}}</p>
                             </li>
-                            <li class="list__post" tabindex="0">
-                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
-                            </li>
-                            <li class="list__post" tabindex="0">
-                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
-                            </li>
-                            <li class="list__post" tabindex="0">
-                                <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                                <p class="post__title">8 Figma design systems that you can download for free today.</p>
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
