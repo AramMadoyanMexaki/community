@@ -8,5 +8,6 @@ class PostAdmin(admin.ModelAdmin):
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ("name",)
 
+
 admin.site.register(Post, PostAdmin)
 admin.site.register(Category, CategoryAdmin)
