@@ -26,7 +26,13 @@ def get_posts(request):
 
 
 def blog(request):
-    return render(request, "blog.html")
+    posts = Post.objects.all()
+
+    context = {
+        "posts": posts,
+    }
+    
+    return render(request, "blog.html", context)
 
 def details(request):
     return render(request, "details.html")

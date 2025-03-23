@@ -23,38 +23,16 @@
         <div class="container">
             <h2 class="sec-title">All Posts</h2>
             <ul class="posts__list flex">
-                <li class="post__item flex">
-                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
-                    <div class="post__context">
-                        <span class="category">Startup</span>
-                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
-                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    </div>
-                </li>
-                <li class="post__item flex">
-                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
-                    <div class="post__context">
-                        <span class="category">Startup</span>
-                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
-                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    </div>
-                </li>
-                <li class="post__item flex">
-                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
-                    <div class="post__context">
-                        <span class="category">Startup</span>
-                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
-                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    </div>
-                </li>
-                <li class="post__item flex">
-                    <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
-                    <div class="post__context">
-                        <span class="category">Startup</span>
-                        <h3 class="post__title">Design tips for designers that cover everything you need</h3>
-                        <p class="post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    </div>
-                </li>
+                {% for post in posts %}
+                    <li class="post__item flex">
+                        <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
+                        <div class="post__context">
+                            <span class="category">{{post.category}}</span>
+                            <h3 class="post__title">{{post.title}}</h3>
+                            <p class="post__descr">{{post.text}}</p>
+                        </div>
+                    </li>
+                {% endfor %}
             </ul>
             <div class="step__buttons flex">
                 <button class="step-btn" id="prev-btn">
