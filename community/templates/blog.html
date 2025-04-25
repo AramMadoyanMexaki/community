@@ -25,11 +25,11 @@
             <ul class="posts__list flex">
                 {% for post in posts %}
                     <li class="post__item flex">
-                        <img src="{% static 'images/startup-img.jpg' %}" alt="post img">
+                        <img style="max-width: 490px; min-height: 318px;" src="{{ post.image.url }}" alt="post img">
                         <div class="post__context">
                             <span class="category">{{post.category}}</span>
                             <h3 class="post__title">{{post.title}}</h3>
-                            <p class="post__descr">{{post.text}}</p>
+                            <p class="post__descr">{{post.content}}</p>
                         </div>
                     </li>
                 {% endfor %}

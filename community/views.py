@@ -1,6 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
-from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -14,11 +13,9 @@ def index(request):
 
 @api_view(["GET"])
 def get_posts(request):
-    featured_post = Post.objects.filter(is_featured=True).first()
     posts = Post.objects.all().order_by("-created_at")
 
     data = {
-        "featured_post": PostSerializer(featured_post).data if featured_post else None,
         "all_posts": PostSerializer(posts, many=True).data,
     }
 
@@ -34,8 +31,16 @@ def blog(request):
     
     return render(request, "blog.html", context)
 
-def details(request):
-    return render(request, "details.html")
+def details(request, id):
+    post = get_object_or_404(Post, id=id)
+    all_posts = Post.objects.all()
+
+    context = {
+        "post": post,
+        "all_posts": all_posts,
+    }
+
+    return render(request, "details.html", context)
 
 def about(request):
     return render(request, "about-us.html")

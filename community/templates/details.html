@@ -8,18 +8,18 @@
                 <div class="user-info flex">
                     <img src="{% static 'images/profile-picture-1.jpg' %}" alt="">
                     <div class="user__text-info">
-                        <span class="user-name">Andrew Jonson</span>
-                        <p class="post-date">Posted on 27th January 2025</p>
+                        <span class="user-name">{{ post.author }}</span>
+                        <p class="post-date">Posted at {{ post.created_at }}</p>
                     </div>
                 </div>
-                <h1 class="details-post__title">Step-by-step guide to choosing great font pairs</h1>
+                <h1 class="details-post__title">{{ post.title }}</h1>
                 <span class="category">
                     <img src="{% static 'images/startup-Icon.svg' %}" alt="">
-                    Startup
+                    {{ post.category }}
                 </span>
             </div>
             <div class="post-img">
-                <img src="{% static 'images/post-img.jpg' %}" alt="">
+                <img src="{{ post.image.url }}" alt="">
             </div>
         </div>
     </section>
@@ -37,24 +37,14 @@
         <div class="container">
             <h2 class="sec-title">What read to next</h2>
             <ul class="next-posts-list flex">
-                <li class="next-post">
-                    <img src="{% static 'images/post-img.jpg' %}" alt="">
-                    <h3 class="next-post__title">A UX Case Study Creating a Studious Environment for Students: </h3>
-                    <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                    <p class="next-post__descr post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                </li>
-                <li class="next-post">
-                    <img src="{% static 'images/post-img.jpg' %}" alt="">
-                    <h3 class="next-post__title">A UX Case Study Creating a Studious Environment for Students: </h3>
-                    <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                    <p class="next-post__descr post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                </li>
-                <li class="next-post">
-                    <img src="{% static 'images/post-img.jpg' %}" alt="">
-                    <h3 class="next-post__title">A UX Case Study Creating a Studious Environment for Students: </h3>
-                    <p class="post__user">By <span>Johne Doe</span> | January 31, 2025</p>
-                    <p class="next-post__descr post__descr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                </li>
+                {% for post in all_posts %}
+                    <li class="next-post">
+                        <img src="{{ post.image.url }}" alt="">
+                        <h3 class="next-post__title">{{ post.title }}</h3>
+                        <p class="post__user">By <span>{{post.author}}</span> | {{ post.created_at }}</p>
+                        <p class="next-post__descr post__descr">{{ post.content }}</p>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </section>

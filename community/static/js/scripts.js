@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="${post.image}" alt="${post.title}" class="featured__image">
                         <p class="post__user">By <span>${post.author}</span> | ${post.created_at}</p>
                         <h2 class="post__title">${post.title}</h2>
-                        <p class="post__content">${post.text}</p>
-                        <button class="primary-btn site-btn" onclick="window.location.href='/post/${post.id}/'">Read more</button>
+                        <p class="post__content">${post.content}</p>
+                        <button class="primary-btn site-btn" onclick="window.location.href='/details/${post.id}/'">Read more</button>
                     `;
                 };
                 
