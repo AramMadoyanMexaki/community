@@ -13,10 +13,7 @@
                     </div>
                 </div>
                 <h1 class="details-post__title">{{ post.title }}</h1>
-                <span class="category">
-                    <img src="{% static 'images/startup-Icon.svg' %}" alt="">
-                    {{ post.category }}
-                </span>
+                <img src="{{ post.category.image.url }}" alt="">{{ post.category }}
             </div>
             <div class="post-img">
                 <img src="{{ post.image.url }}" alt="">
@@ -38,12 +35,14 @@
             <h2 class="sec-title">What read to next</h2>
             <ul class="next-posts-list flex">
                 {% for post in all_posts %}
+                <a href="{% url 'detail' post.id %}">
                     <li class="next-post">
                         <img src="{{ post.image.url }}" alt="">
                         <h3 class="next-post__title">{{ post.title }}</h3>
                         <p class="post__user">By <span>{{post.author}}</span> | {{ post.created_at }}</p>
                         <p class="next-post__descr post__descr">{{ post.content }}</p>
                     </li>
+                </a>
                 {% endfor %}
             </ul>
         </div>

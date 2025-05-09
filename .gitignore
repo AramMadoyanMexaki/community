@@ -22,3 +22,4 @@ staticfiles/
 
 # Other
 *.log
+node_modules/
